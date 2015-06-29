@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+ 
+    <context:component-scan base-package="my.app" />
+ 
+    <bean id="chunkTemplatesConfig" class="java.util.HashMap" scope="prototype">
+        <constructor-arg>
+            <map key-type="java.lang.String" value-type="java.lang.String">
+                <entry key="default_extension" value="chtml" />
+                <entry key="cache_minutes" value="0" />
+                <entry key="layers" value="" />
+                <entry key="theme_path" value="" />
+                <entry key="hide_errors" value="FALSE" />
+                <entry key="error_log" value="stderr" />
+                <entry key="encoding" value="UTF-8" />
+                <entry key="locale" value="" />
+                <entry key="filters" value="" />
+            </map>
+        </constructor-arg>
+    </bean>
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="com.x5.template.spring.ChunkTemplateView"/>
+        <property name="prefix" value="/WEB-INF/themes/"/>
+        <property name="suffix" value=".chtml"/>
+        <property name="requestContextAttribute" value="rc"/>
+    </bean>
+</beans>
+

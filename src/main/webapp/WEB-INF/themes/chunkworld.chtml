@@ -1,0 +1,9 @@
+{% exec layout %}
+  {$body=}{% include #jello_body %}{=}
+{% endexec %}
+
+{#jello_body}
+    <center>
+        <h2>Welcome to JELLO World</h2>
+    </center>
+{#}
