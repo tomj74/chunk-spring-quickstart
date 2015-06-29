@@ -24,6 +24,8 @@ b) <i>mvn jetty:run</i> (Jetty servlet container)
 <h2>Credits</h2>
 Based on Andrzej Cichon's [work][4] with Facelets.
 
+![Analytics](https://ga-beacon.appspot.com/UA-18933152-2/tomj74/chunk-spring-mvc)
+
   [1]: http://www.x5software.com/chunk/
   [2]: http://www.x5software.com/chunk/wiki/Spring_MVC
   [3]: http://projects.spring.io/spring-framework/
