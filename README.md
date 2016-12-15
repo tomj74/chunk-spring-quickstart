@@ -1,7 +1,7 @@
 Spring MVC & Chunk Templates
 ================
 [<img align="right" src="http://www.x5software.com/chunk/docs/img/chunk_logo_500x500.png" width="250" />][1]
-[<img align="right" src="http://www.lessonslab.com/wp-content/uploads/2014/11/spring-logo.png" />][2]
+[<img align="right" src="http://www.x5software.com/chunk/spring_logo.png" />][2]
 
 Sample web application with [Spring MVC][3] (Controller layer) and [Chunk Templates][1] (View layer)
 
