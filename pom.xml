@@ -11,7 +11,8 @@
   <!-- POM properties: -->
    <properties>
        <spring.version>4.1.5.RELEASE</spring.version>
-       <chunk.version>3.0.0</chunk.version>
+       <chunk.version>3.2.4</chunk.version>
+       <chunk-springmvc.version>0.1.0</chunk-springmvc.version>
        <jetty.port>8090</jetty.port>
        <tomcat.port>8070</tomcat.port>
    </properties>
@@ -56,6 +57,12 @@
                         <groupId>com.x5dev</groupId>
                         <artifactId>chunk-templates</artifactId>
                         <version>${chunk.version}</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>com.x5dev</groupId>
+                        <artifactId>chunk-springmvc</artifactId>
+                        <version>${chunk-springmvc.version}</version>
                 </dependency>
 
                 <!-- JSTL -->
