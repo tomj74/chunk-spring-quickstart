@@ -21,6 +21,20 @@ Just clone the project and then run: <br/>
 a) <i>mvn tomcat7:run</i> (Tomcat 7 servlet container), or  <br/>
 b) <i>mvn jetty:run</i> (Jetty servlet container)
 
+Tomcat test URLs:
+```
+http://localhost:8070/
+http://localhost:8070/hello
+http://localhost:8070/chunk
+```
+
+Jetty test URLs:
+```
+http://localhost:8090/
+http://localhost:8090/hello
+http://localhost:8090/chunk
+```
+
 <h2>Credits</h2>
 Based on Andrzej Cichon's [work][4] with Facelets.
 
